@@ -17,7 +17,7 @@ public class JavalinSingleton {
     public static Javalin getInstance(){
         Javalin app = Javalin.create();
 
-        app.get("/get-request", ctx->{
+        app.get("/", ctx->{
             ctx.result("Hello World");
         });
         
